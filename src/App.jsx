@@ -1,5 +1,22 @@
 
-function App() {
+import React from "react"
+import Header from "./components/Header"
+import Meme from "./components/Meme"
+
+export default function App() {
+  return (
+    <div>
+      <Header />
+      <Meme />
+    </div>
+  )
+}
+
+
+
+
+
+/**function App() {
 
   return (
     <>
@@ -8,4 +25,4 @@ function App() {
   )
 }
 
-export default App
+export default App*/

@@ -1,7 +1,6 @@
-
-import React from "react"
-import Header from "./components/Header"
-import Meme from "./components/Meme"
+import React from "react";
+import Header from "./Header";
+import Meme from "./Meme";
 
 export default function App() {
   return (
@@ -9,6 +8,5 @@ export default function App() {
       <Header />
       <Meme />
     </div>
-  )
+  );
 }
-

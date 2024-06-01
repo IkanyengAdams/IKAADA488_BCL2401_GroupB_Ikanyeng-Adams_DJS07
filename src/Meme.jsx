@@ -34,7 +34,8 @@ const [meme, setMeme] = React.useState({
   }))
 
   }
-// function to handle text input changes
+/* function to handle text input changes
+**/
   function handleChange(event) {
     const {name, value} = event.target 
     setMeme(prevMeme => ({

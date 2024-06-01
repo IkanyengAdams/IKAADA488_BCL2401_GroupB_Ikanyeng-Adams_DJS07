@@ -34,8 +34,8 @@ const [meme, setMeme] = React.useState({
   }))
 
   }
-/* function to handle text input changes
-**/
+/* function to handle text input changes.
+*Allows the user to input custom text for the meme, updating the state accordingly for real-time changes.*/
   function handleChange(event) {
     const {name, value} = event.target 
     setMeme(prevMeme => ({
@@ -44,9 +44,15 @@ const [meme, setMeme] = React.useState({
   }))
   }
 
+/*Provides input fields for the top and bottom text and a button to get a new meme image.
+*The form elements are used to capture user input and trigger the function to fetch a new meme image.*/
 
+/*for the meme container
+*Displays the current meme image along with the top and bottom text.
+*Visually represents the meme created by the user, providing an immediate preview of the meme.*/
   return (
     <main>
+      
       <div className="form">
      <input
             type="text"

@@ -4,20 +4,36 @@ The Meme Generator project is a React-based web application that allows users to
 
 # Table of Contents
 Overview
+
 Features
+
 Getting Started
+
 Project Structure
+
 Component Documentation
-Header Component
+
+Header 
+
 Meme Component
+
 Styling
+
 License
+
 Features
+
 Fetches a list of meme images from the Imgflip API.
+
 Displays a random meme image.
+
 Allows users to add custom top and bottom text to the meme.
+
 Responsive and user-friendly interface.
-Getting Started
-Prerequisites
+
+
+# Prerequisites
 Node.js (version 14.x or higher)
 npm (version 6.x or higher)
+
+# Open this project on your preffered code editor and open with localhost because vite is installed

@@ -2,13 +2,19 @@ import React from "react";
 
 
 export default function Meme() {
+  /*state for meme text and image
+  *It is necessary to manage the meme data and update it dynamically based on user input API response*/
 const [meme, setMeme] = React.useState({
     topText: "",
     bottomText: "",
     randomImage: "http://i.imgflip.com/1bij.jpg" 
-})
-  const [allMemes, setAllMemes] = React.useState([]);
+});
 
+/*state for all memes data
+*storing all meme data allows us to randomly select a meme image for the user*/
+  const [allMemes, setAllMemes] = React.useState([]);
+/*useEffect hook to fetch memes data once on component mount.
+*`useEffect` is used here to ensure the meme data is fetched only once, similar to componentDidMount in class components. The empty dependency array ([]) ensures it runs only once.*/
   React.useEffect(() => {
     async function getMemes() {
     const res = await fetch("https://api.imgflip.com/get_memes")
@@ -17,7 +23,8 @@ const [meme, setMeme] = React.useState({
   }
   getMemes()
 }, [])
-  
+  /*function to get a random meme image.
+  *Provides the functionality to change the meme image to a random one from the fetched memes, enhancing user interaction.*/
   function getMemeImage() {
     const randomNumber = Math.floor(Math.random() * allMemes.length);
     const url = allMemes[randomNumber].url
@@ -27,7 +34,7 @@ const [meme, setMeme] = React.useState({
   }))
 
   }
-
+// function to handle text input changes
   function handleChange(event) {
     const {name, value} = event.target 
     setMeme(prevMeme => ({

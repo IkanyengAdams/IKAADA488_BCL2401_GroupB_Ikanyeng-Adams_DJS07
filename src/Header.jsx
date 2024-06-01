@@ -1,5 +1,7 @@
-import React from "react"
 
+
+/* Acts as the main container for the header elements.
+* Using a `header` tag semantically indicates that this section is the header of the page or section.*/
 export default function Header() {
   return (
     <header className="header">

@@ -1,7 +1,39 @@
-# DJS07 - Build a Meme Generator
+# Meme Generator Project
+# Overview
+The Meme Generator project is a React-based web application that allows users to generate memes by selecting a random meme image from an API and adding custom text to it. This project is part of the React Course (DJS07) and serves as a practical example of using React for state management, event handling, and API integration.
 
-In this challenge you are required to code-along the Scrimba lesson: https://scrimba.com/playlist/prXJpCQ
+# Table of Contents
+Overview
 
-This starter repo only has CSS styling added to the empty React project.
+Features
 
-After cloning run `npm install` to install dependencies.
+Getting Started
+
+Project Structure
+
+Component Documentation
+
+Header 
+
+Meme Component
+
+Styling
+
+License
+
+Features
+
+Fetches a list of meme images from the Imgflip API.
+
+Displays a random meme image.
+
+Allows users to add custom top and bottom text to the meme.
+
+Responsive and user-friendly interface.
+
+
+# Prerequisites
+Node.js (version 14.x or higher)
+npm (version 6.x or higher)
+
+# Open this project on your preffered code editor and open with localhost because vite is installed
